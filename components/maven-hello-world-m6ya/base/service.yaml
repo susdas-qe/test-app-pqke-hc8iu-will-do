@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: maven-hello-world-m6ya
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: maven-hello-world-m6ya
+    app.kubernetes.io/part-of: test-app-pqke
+  name: maven-hello-world-m6ya
+spec:
+  ports:
+  - port: 8081
+    targetPort: 8081
+  selector:
+    app.kubernetes.io/instance: maven-hello-world-m6ya
+status:
+  loadBalancer: {}
