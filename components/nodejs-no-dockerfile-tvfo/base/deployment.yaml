@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-no-dockerfile-tvfo
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/susdas_quay_org/build-e2e-hzrm-tenant/test-app-pqke/nodejs-no-dockerfile-tvfo@sha256:4205867ec58bcbfd98937208fa904c144646cb0b27bb92d9c318828b3c0ddfe6
         name: my-nodejs
         ports:
         - containerPort: 3001
