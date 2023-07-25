@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-13ay
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas_quay_org/build-e2e-hzrm-tenant/test-app-pqke/devfile-sample-python-basic-13ay@sha256:6b66eb2476be3ac760058ce5bc1a066d35863ab0fc88a5b53cfa80f3c0f1081d
+        name: my-python
+        resources: {}
+status: {}
